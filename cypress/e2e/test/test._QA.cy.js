@@ -10,8 +10,9 @@ describe('Тестирование   https://testqastudio.me/', function () {
          cy.get('.header-left-items > .site-branding > .logo > .logo-dark').click();
          cy.get('.post-11337 > .product-inner > .product-thumbnail > .woocommerce-LoopProduct-link > .attachment-woocommerce_thumbnail').click();
          cy.get('.summary > .cart > .product-button-wrapper > .single_add_to_cart_button').click();
-         cy.wait(2000);
+         cy.wait(4000);
          cy.get('.checkout').click();
+         cy.wait(4000);
          cy.get('#billing_first_name').type('Ксения');
          cy.get('#billing_last_name').type('Кузнецова');
          cy.get('#select2-billing_country-container').type('Россия').click();
